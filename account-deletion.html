@@ -16,8 +16,8 @@
     ol.steps { padding-left: 1.25rem; }
     ol.steps li { margin: 0.5rem 0; }
     footer { margin-top: 2rem; font-size: 0.875rem; opacity: 0.85; }
-    a { color: inherit; }
     code { font-size: 0.9em; }
+    .email { word-break: break-all; }
   </style>
 </head>
 <body>
@@ -26,7 +26,7 @@
   <p><strong>App:</strong> TicTacToe (same name as on Google Play)<br />
      <strong>Developer:</strong> <!-- EDIT: must match Play Console listing -->YOUR_DEVELOPER_NAME_ON_PLAY_CONSOLE</p>
 
-  <p>For privacy questions or deletion assistance, email <a href="mailto:your-support-email@example.com">your-support-email@example.com</a>.</p>
+  <p>For privacy questions or deletion assistance, contact us at <strong class="email">your-support-email@example.com</strong> (copy this address into your email app).</p>
 
   <h2>How to request deletion</h2>
 
@@ -39,7 +39,7 @@
   <p>This deletes your <strong>Firebase Authentication</strong> account for the app. You will be signed out and cannot sign back into the same account. If you see an error about recent login, open the app again and repeat these steps while your session is active.</p>
 
   <h3>2. By email</h3>
-  <p>If you cannot use the app, send an email to <a href="mailto:your-support-email@example.com">your-support-email@example.com</a> with:</p>
+  <p>If you cannot use the app, send an email to <strong class="email">your-support-email@example.com</strong> with:</p>
   <ul>
     <li>Subject: <strong>TicTacToe — Account and data deletion</strong></li>
     <li>Your in-game username if known (often starts with <code>guest_</code>)</li>
@@ -63,10 +63,7 @@
   <p>The app uses services such as Firebase (Google), advertising SDKs, and in-app billing. Each may process data as described in their policies and in our Google Play Data safety declaration.</p>
 
   <footer>
-    <p>Last updated: <time id="updated"></time></p>
+    <p>Last updated: <time datetime="2026-05-01">May 1, 2026</time></p>
   </footer>
-  <script>
-    document.getElementById("updated").textContent = new Date().toISOString().slice(0, 10);
-  </script>
 </body>
 </html>
