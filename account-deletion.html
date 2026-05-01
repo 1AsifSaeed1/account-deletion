@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+  Host this file over HTTPS, then use that URL in Play Console → Account deletion URL.
+  Replace YOUR_DEVELOPER_NAME_ON_PLAY_CONSOLE and your-support-email@example.com before hosting.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TicTacToe — Account &amp; data deletion</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.55; max-width: 42rem; margin: 0 auto; padding: 1.5rem; }
+    h1 { font-size: 1.5rem; margin-top: 0; }
+    h2 { font-size: 1.1rem; margin-top: 1.75rem; }
+    ol.steps { padding-left: 1.25rem; }
+    ol.steps li { margin: 0.5rem 0; }
+    footer { margin-top: 2rem; font-size: 0.875rem; opacity: 0.85; }
+    a { color: inherit; }
+    code { font-size: 0.9em; }
+  </style>
+</head>
+<body>
+
+  <h1>TicTacToe — Delete your account and associated data</h1>
+  <p><strong>App:</strong> TicTacToe (same name as on Google Play)<br />
+     <strong>Developer:</strong> <!-- EDIT: must match Play Console listing -->YOUR_DEVELOPER_NAME_ON_PLAY_CONSOLE</p>
+
+  <p>For privacy questions or deletion assistance, email <a href="mailto:your-support-email@example.com">your-support-email@example.com</a>.</p>
+
+  <h2>How to request deletion</h2>
+
+  <h3>1. In the app (fastest)</h3>
+  <ol class="steps">
+    <li>Open <strong>TicTacToe</strong>.</li>
+    <li>Open <strong>Profile</strong>.</li>
+    <li>Tap <strong>Delete account</strong> and confirm.</li>
+  </ol>
+  <p>This deletes your <strong>Firebase Authentication</strong> account for the app. You will be signed out and cannot sign back into the same account. If you see an error about recent login, open the app again and repeat these steps while your session is active.</p>
+
+  <h3>2. By email</h3>
+  <p>If you cannot use the app, send an email to <a href="mailto:your-support-email@example.com">your-support-email@example.com</a> with:</p>
+  <ul>
+    <li>Subject: <strong>TicTacToe — Account and data deletion</strong></li>
+    <li>Your in-game username if known (often starts with <code>guest_</code>)</li>
+    <li>Whether you use Android or iOS</li>
+  </ul>
+
+  <h2>What is deleted</h2>
+  <ul>
+    <li><strong>Sign-in account:</strong> Removed when in-app deletion succeeds, or when we verify your email request and delete the matching Firebase Authentication user.</li>
+    <li><strong>Data stored under your user ID</strong> for game features (for example Realtime Database records such as profile fields, coins/score fields, skins selections, matchmaking/game nodes linked to your ID, and uploaded profile photos in cloud storage): we delete these when we process your deletion request. If anything remains due to backups or replication, it ages out as described below.</li>
+  </ul>
+
+  <h2>What may be retained and for how long</h2>
+  <ul>
+    <li><strong>Backups:</strong> Deleted data may remain in encrypted backups for up to <strong>90 days</strong> before rotation.</li>
+    <li><strong>Advertising and payments:</strong> Ad networks and app stores may retain limited device or payment records under their own policies; we do not control those systems.</li>
+    <li><strong>Legal requirements:</strong> We may keep minimal information where required by law.</li>
+  </ul>
+
+  <h2>Third-party services</h2>
+  <p>The app uses services such as Firebase (Google), advertising SDKs, and in-app billing. Each may process data as described in their policies and in our Google Play Data safety declaration.</p>
+
+  <footer>
+    <p>Last updated: <time id="updated"></time></p>
+  </footer>
+  <script>
+    document.getElementById("updated").textContent = new Date().toISOString().slice(0, 10);
+  </script>
+</body>
+</html>
